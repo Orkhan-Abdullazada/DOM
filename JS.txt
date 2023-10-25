@@ -1,0 +1,12 @@
+const newTodo=document.getElementById("newTodo")
+const addtodobtn=document.getElementById("addTodo")
+const todoList=document.getElementById("list")
+
+
+
+
+addtodobtn.addEventListener("click", function (){
+todoList.innerHTML+=`<li>${newTodo.value} <button>delete<button></li>`
+ newTodo.value=" "
+
+})
